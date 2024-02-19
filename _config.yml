@@ -21,13 +21,23 @@
 title: Kevin Qiao
 baseurl: "" # the subpath of your site, e.g. /blog
 url: beepboop271.github.io
-github_username: beepboop271
-linkedin_username: kevin-qiao-b7378519b
+author:
+  name: Kevin Qiao
 
-# Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+
+remote_theme: jekyll/minima
+
+minima:
+  social_links:
+    - platform: github
+      user_url: https://github.com/beepboop271
+    - platform: linkedin
+      user_url: https://www.linkedin.com/in/kevinqiao271/
+    - platform: rss
+      user_url: /feed.xml
 
 # Exclude from processing.
 # The following items will not be processed, by default.
